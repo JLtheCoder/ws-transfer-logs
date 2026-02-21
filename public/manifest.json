@@ -6,5 +6,12 @@
   "action": {
     "default_popup": "index.html"
   },
-  "permissions": []
+  "permissions": [],
+  "content_scripts": [
+    {
+      "matches": ["https://my.wealthsimple.com/app/home"],
+      "js": ["contentScript.js"],
+      "run_at": "document_end"
+    }
+  ]
 }
