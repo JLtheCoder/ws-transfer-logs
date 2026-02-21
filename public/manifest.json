@@ -9,7 +9,7 @@
   "permissions": [],
   "content_scripts": [
     {
-      "matches": ["https://my.wealthsimple.com/app/home"],
+      "matches": ["https://my.wealthsimple.com/app/*"],
       "js": ["contentScript.js"],
       "run_at": "document_end"
     }
